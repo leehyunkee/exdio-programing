@@ -1,5 +1,30 @@
 #include<stdio.h>
 
+//int main()
+//{
+//	int starnum;
+//		printf("인피니티스톤이 몇개 떨어지나요 : ");
+//		scanf_s("%d", &starnum);
+//		for (int height = 0; height < starnum; height++)
+//
+//		{
+//
+//			for (int bottom = 0; bottom < starnum - height; bottom++)
+//
+//			{
+//				printf(" ");
+//			}
+//			for (int swap = 0; swap <= height; swap++)
+//			{
+//				printf("*");
+//			}
+//			printf("\n");
+//		}
+//		return 0;
+//
+//}
+//
+//
 int main()
 {
 	int starnum;
@@ -10,11 +35,15 @@ int main()
 	for (int height = 0; height < starnum; height++)
 	{
 
-		for (int bottom = 0; bottom <= height; bottom++)
+		for (int bottom = 0; bottom < starnum - height; bottom++)
 		{
-			printf("#");
+			printf("*");
 		}
-		printf("$\n");
+		for (int rows = 0; rows <= height; rows++ );
+		{
+			printf("s");
+		}
+		printf("\n");
 	}
 
 

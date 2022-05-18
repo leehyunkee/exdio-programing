@@ -1,59 +1,58 @@
 #include<stdio.h>
 
-void func();
-
-int main()
-{
-	func();
-	func();
-	func();
-	func();
-	func();
-	func();
-	func();
-	func();
-	func();
-
-
-
-	return 0;
-}
-void func()
-{
-	static int a = 0;
-	int b = 0;
-
-	a++;
-	b++;
-
-	printf("a : %d, b : %d\n", a, b);
-}
-
-
-
-
-//int cal(int x, int y, int z)
-//{
-//	int a;
-//
-//	a = x + y + z;
-//
-//	return a;
-//}
+//void func();
 //
 //int main()
 //{
+//	func();
+//	func();
+//	func();
+//	func();
+//	func();
+//	func();
+//	func();
+//	func();
+//	func();
 //
 //
-//	int num;
-//
-//	num = cal(1, 2, 3);
-//
-//	printf("%d", num);
 //
 //	return 0;
 //}
+//void func()
+//{
+//	static int a = 0;
+//	int b = 0;
 //
+//	a++;
+//	b++;
+//
+//	printf("a : %d, b : %d\n", a, b);
+//}
+
+extern int cal(int, int, int);
+
+int main()
+{
+
+
+	int num;
+
+	num = cal(1, 2, 3);
+
+	printf("%d", num);
+
+	return 0;
+}
+int cal(int x, int y, int z)
+{
+	int a;
+
+	a = x + y + z;
+
+	return a;
+}
+
+
 
 
 //extern int calculate(int firstnum, int secondnum);
